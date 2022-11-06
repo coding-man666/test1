@@ -1,7 +1,5 @@
 ''' [demo01.py] file created at 2022/11/6 12:27 '''
 import os
-
-from excute_system_commands.demo01 import execute_system_command
 import main
 
 '''
