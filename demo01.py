@@ -59,7 +59,7 @@ def git_push(local_repo_path: str, commit_message: str = 'a common commit'):
         print('[error] The submission was not successful!')
 
 
-@main.main_call(call_path=__file__,is_save_code=True)
+@main.main_call(call_path=__file__,is_save_code=True,code_file_path=__file__)
 def test():
     '''
     测试: out.使用 Python 操作 git
