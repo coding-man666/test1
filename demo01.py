@@ -11,6 +11,7 @@ import main
 EvyTiS6jXQVd07P-BDVcXruFEe6xbPps1lMvzOBAvV0QzBqEmm0XqtWvr*mNv9N
 a-dO*DFhGcjoH&new=1 (如何使用 Python 操作 Git 代码？GitPython 入门介绍)
 
+2. 实测之后感觉不好用
 
 '''
 
@@ -58,10 +59,10 @@ def git_push(local_repo_path: str, commit_message: str = 'a common commit'):
         print('[error] The submission was not successful!')
 
 
-@main.main_call(call_path=__file__)
+@main.main_call(call_path=__file__,is_save_code=True)
 def test():
     '''
-    测试使用 GitPython 操作 git
+    测试: out.使用 Python 操作 git
     :return:
     '''
     git_push(r'.')
