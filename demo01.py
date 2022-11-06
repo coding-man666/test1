@@ -49,6 +49,7 @@ def git_push(local_repo_path: str, commit_message: str = 'a common commit'):
                   + commit_message + '" & git push origin master'
     # print('git command = ', git_command)
     # 执行构造好的 cmd 命令,若执行成功,则完成整个 git 的 push 操作
+    # os.system() 返回 0 表示命令执行成功,如果返回其他值则表示执行失败
     result = os.system(git_command)
     if result == 0:
         print('[info] The submission was successful, located at ', abs_path,
